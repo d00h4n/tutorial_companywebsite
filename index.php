@@ -31,10 +31,19 @@
                 </div>
 
                 <div class="tutor-list">
+                    <?php 
+                    $sql1       = "select * from tutors order by id desc";
+                    $q1       = mysqli_query($koneksi,$sql1);
+                    while($r1 = mysqli_fetch_array($q1)){
+                    ?>
                     <div class="kartu-tutor">
-                        <img src="https://dfu1k3y1rami2.cloudfront.net/wp-content/uploads/2014/07/26195109/2020_cb.jpg" />
-                        <p>Jason Lee Scott</p>
+                        <img src="<?php echo url_dasar()."/gambar/".tutors_foto($r1['id']) ?>" />
+                        <p><?php echo $r1['nama'] ?></p>
                     </div>
+                        <?php
+                    }
+                    ?>
+                    
                     <div class="kartu-tutor">
                         <img src="https://images.ctfassets.net/1wryd5vd9xez/4DxzhQY7WFsbtTkoYntq23/a4a04701649e92a929010a6a860b66bf/https___cdn-images-1.medium.com_max_2000_1_Y6l_FDhxOI1AhjL56dHh8g.jpeg" />
                         <p>John Doe</p>

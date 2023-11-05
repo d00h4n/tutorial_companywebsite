@@ -44,14 +44,12 @@ function ambil_isi($id_tulisan){
     $text   = strip_tags($r1['isi']);
     return $text;
 }
-
 function bersihkan_judul($judul){
     $judul_baru     = strtolower($judul);
     $judul_baru     = preg_replace("/[^a-zA-Z0-9\s]/","",$judul_baru);
     $judul_baru     = str_replace(" ","-",$judul_baru);
     return $judul_baru;
 }
-
 function buat_link_halaman($id){
     global $koneksi;
     $sql1    = "select * from halaman where id = '$id'";
@@ -81,4 +79,18 @@ function maximum_kata($isi,$maximum){
     $array_isi = array_slice($array_isi,0,$maximum);
     $isi = implode(" ",$array_isi);
     return $isi;
+}
+
+function tutors_foto($id){
+    global $koneksi;
+    $sql1   = "select * from tutors where id = '$id'";
+    $q1     = mysqli_query($koneksi,$sql1);
+    $r1     = mysqli_fetch_array($q1);
+    $foto   = $r1['foto'];
+
+    if($foto){
+        return $foto;
+    }else{
+        return 'tutors_default_picture.png';
+    }
 }
