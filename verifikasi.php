@@ -1,21 +1,4 @@
 <?php include("inc_header.php") ?>
-<style>
-    .error {
-        padding: 20px;
-        background-color: #f44336;
-        color: #FFFFFF;
-        margin-bottom: 15px;
-    }
-
-    .sukses {
-        padding: 20px;
-        background-color: #2196f3;
-        color: #FFFFFF;
-        margin-bottom: 15px;
-    }
-</style>
-
-
 <?php
 $err     = "";
 $sukses  = "";

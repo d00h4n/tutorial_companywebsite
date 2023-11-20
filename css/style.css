@@ -7,7 +7,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Open Sans',sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .wrapper {
@@ -34,11 +34,11 @@ nav {
   display: flex;
   line-height: 80px;
   position: sticky;
-  position: -webkit-sticky; 
+  position: -webkit-sticky;
   top: 0;
-  background: #FFFFFF;
+  background: #ffffff;
   z-index: 1;
-  border-bottom:1px solid #364f6b;
+  border-bottom: 1px solid #364f6b;
 }
 
 nav ul {
@@ -78,12 +78,12 @@ section {
 .kolom .deskripsi {
   font-size: 20px;
   font-weight: bold;
-  font-family: 'comic sans ms';
+  font-family: "comic sans ms";
   color: #364f6b;
 }
 
 h2 {
-  font-family: 'comic sans ms';
+  font-family: "comic sans ms";
   font-weight: 800;
   font-size: 45px;
   margin-bottom: 20px;
@@ -97,7 +97,7 @@ a.tbl-biru {
   border-radius: 20px;
   margin-top: 20px;
   padding: 15px 20px 15px 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-weight: bold;
 }
@@ -112,7 +112,7 @@ a.tbl-pink {
   border-radius: 20px;
   margin-top: 20px;
   padding: 15px 20px 15px 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-weight: bold;
 }
@@ -150,7 +150,7 @@ p {
 }
 
 .kartu-tutor p {
-  font-family: 'comic sans ms';
+  font-family: "comic sans ms";
   font-weight: 800;
   font-size: 25px;
   text-align: center;
@@ -176,7 +176,7 @@ p {
 
 #contact {
   background: #dedede;
-  padding:50px 0px 50px 0px;
+  padding: 50px 0px 50px 0px;
 }
 
 .footer {
@@ -193,7 +193,7 @@ p {
 }
 
 h3 {
-  font-family: 'comic sans ms';
+  font-family: "comic sans ms";
   font-weight: 800;
   font-size: 30px;
   margin-bottom: 20px;
@@ -211,46 +211,101 @@ h3 {
 
 @media screen and (max-width: 991.98px) {
   .wrapper {
-      width: 90%;
+    width: 90%;
   }
 
   .logo a {
-      display: block;
-      width: 100%;
-      text-align: center;
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 
   nav .menu {
-      width: 100%;
-      margin: 0;
+    width: 100%;
+    margin: 0;
   }
 
   nav .menu ul {
-      text-align: center;
-      margin: auto;
-      line-height: 60px;
+    text-align: center;
+    margin: auto;
+    line-height: 60px;
   }
 
   nav .menu ul li {
-      display: inline-block;
-      float: none;
+    display: inline-block;
+    float: none;
   }
 
   section {
-      display: block;
+    display: block;
   }
 
   section img {
-      display: block;
-      width: 100%;
-      height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   .kartu-tutor {
-      width: 50%;
+    width: 50%;
   }
 
   .kartu-partner {
-      width: 50%;
+    width: 50%;
   }
+}
+
+/* tambahan dari pendaftaran dan verifikasi */
+table {
+  width: 600px;
+}
+
+@media screen and (max-width: 700px) {
+  table {
+    width: 90%;
+  }
+}
+table td {
+  padding: 5px;
+}
+td.label {
+  width: 40%;
+}
+.input {
+  border: 1px solid #cccccc;
+  background-color: #dfdfdf;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+input.tbl-biru {
+  border: none;
+  background-color: #3f72af;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+input.tbl-biru:hover {
+  background-color: #fc5185;
+  text-decoration: none;
+}
+.error {
+  padding: 20px;
+  background-color: #f44336;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.sukses {
+  padding: 20px;
+  background-color: #2196f3;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.error ul {
+  margin-left: 10px;
 }
